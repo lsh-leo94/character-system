@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+## Participant Detail ##
+Name: Lee Shih Hai
+Description: This project is to submit the assignment assigned by SleekFlow for their selection process.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## Note ##
 You will have to follow the step listed below to run in your machine
 1. Open your terminal/CMD and go to this folder
