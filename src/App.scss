@@ -1,0 +1,152 @@
+@import '~antd/dist/antd.css';
+.logo{
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 5px;
+  text-align: center;
+}
+
+.no-results{
+  width: 100%;
+  text-align: center;
+}
+
+.detail-content{
+  padding: '10px';
+  max-height: 100vh;
+  overflow-x: scroll;
+}
+
+.search-container{
+  height: 20vh;
+  padding: 10px;
+  background-color: white;
+
+  .title{
+    font-size: 28px;
+    color: black;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .extra-filter{
+    width: 45%;
+    padding: 5px;
+  }
+}
+
+.load-more-loading{
+  text-align: center;
+  padding-top: 10px;
+}
+
+.listing-container{
+  background-color: rgba(192, 192, 192,0.1);
+  max-height: 80vh;
+  overflow-y: scroll;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  
+  
+}
+
+.character-detail{
+  width: 100%;
+
+  .title{
+    font-size: 30px;
+  }
+
+  .header{
+    padding: 20px;
+    display: flex;
+    width: 100%;
+
+    .title-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .title {
+      flex: 2;
+      font-size: 50px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .personal-info{
+    width: 80%;
+    margin: 0px auto;
+
+    .content{
+      border: 1px solid #a9a9a9;
+      padding: 10px;
+    }
+
+    label{
+      padding: 5px;
+    }
+
+    .label{
+      font-size: 16px;
+    }
+
+    .info{
+      font-size: 14px;
+    }
+  }
+
+  .episode-info{
+    width: 80%;
+    margin: 20px auto;
+  }
+}
+
+.character-img{
+  border-radius: 50%;
+}
+
+.contact-card{
+  color: rgb(0, 0, 0);
+  height: 60px;
+  position: relative;
+  padding: 5px;
+  display: flex;
+  border: 1px solid rgb(218, 218, 218);
+  &:hover{
+    cursor: pointer;
+    background-color: rgba(95, 94, 94, 0.1);
+  }
+  
+  .image{
+    height: 100%;
+    position: relative;
+    width: 30%;
+    justify-content: center;
+    display: flex;
+    flex: 1;
+
+    img{
+      position: absolute;
+    }
+  }
+  .info{
+    padding: 3px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+
+    label{
+      cursor: pointer;
+      display: block;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow:hidden;
+      height: 20px;
+    }
+  }  
+}
+

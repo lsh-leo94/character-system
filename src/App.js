@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { Link, Outlet } from 'react-router-dom';
+import { Layout, Menu } from 'antd';
+import { ContactsOutlined } from '@ant-design/icons';
 
-function App() {
+const { Header, Sider, Content } = Layout;
+const App = () => {
+  const menuItems = [
+    {
+      key:"contact",
+      icon:<ContactsOutlined />,
+      label: <Link to="/contact">Contact</Link>
+    }
+  ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout style={{ minHeight: '100vh' }}>
+      <Sider>
+        <div className='logo'>Ricky and Morty</div>
+        <Menu mode="inline" items={menuItems} />
+      </Sider>
+      <Content style={{ margin: '0' }}>
+        <div className="App">
+          <Outlet />
+        </div>
+      </Content>
+    </Layout>
   );
 }
 
