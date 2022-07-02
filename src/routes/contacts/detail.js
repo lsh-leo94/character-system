@@ -29,7 +29,7 @@ const ContactDetail = (props) => {
         <Col span={24}>
           <div className="header">
             <div className='title-image'>
-              <img className='character-img' src={character?.image} height="200px" /> 
+              <img className='character-img' src={character?.image} alt={character?.name} height="200px" /> 
             </div>
             <div className="title">
               {character?.name}

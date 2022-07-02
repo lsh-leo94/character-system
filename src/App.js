@@ -3,7 +3,7 @@ import { Link, Outlet } from 'react-router-dom';
 import { Layout, Menu } from 'antd';
 import { ContactsOutlined } from '@ant-design/icons';
 
-const { Header, Sider, Content } = Layout;
+const { Sider, Content } = Layout;
 const App = () => {
   const menuItems = [
     {

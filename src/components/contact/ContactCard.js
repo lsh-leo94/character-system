@@ -6,7 +6,7 @@ const ContactCard = ({ id, name, species, image }) => {
     <Link to={`/contact/${id}`} >
       <div className='contact-card'>
         <div className='image'>
-          <img className='character-img' src={image} height="40px" />
+          <img className='character-img' src={image} alt={name} height="40px" />
         </div>
         <div className="info">
           <label>{name}</label>
