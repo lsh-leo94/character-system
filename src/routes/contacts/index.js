@@ -48,7 +48,7 @@ const ContactList = () => {
 
   useEffect(() => {
     getCharacterList(false, '');
-  });
+  }, []);
 
   const onScroll = () => {
     if(listRef?.current){
