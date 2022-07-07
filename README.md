@@ -27,3 +27,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+### Updates ###
+2022-07-07 - Fix useEffect for keep looping, added dependency array
